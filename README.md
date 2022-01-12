@@ -1,2 +1,2 @@
-# go-vue-blog
-gin + vue3 + blog
+# gin-vue-blog
+gin vue3 blog
