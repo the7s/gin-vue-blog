@@ -1,2 +1,2 @@
-# go-gin-blog
-golang + gin + blog
+# go-vue-blog
+gin + vue3 + blog
