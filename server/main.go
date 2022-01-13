@@ -12,5 +12,8 @@ import (
 
 func main() {
 	global.GVB_VP = core.Viper() // 初始化配置
+	global.GVB_LOG = core.Zap()
+
+	global.GVB_LOG.Info("32132132132")
 	core.RunServer()
 }

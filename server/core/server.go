@@ -2,23 +2,24 @@ package core
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
-	"net/http"
+	"github.com/the7s/go-vue-blog/server/global"
+	"github.com/the7s/go-vue-blog/server/initialize"
 )
 
-func RunServer() {
-	address := fmt.Sprintf(":%d", 8888)
+type server interface {
+	ListenAndServe() error
+}
 
+func RunServer() {
+	address := fmt.Sprintf(":%d", global.GVB_CONFIG.System.Addr)
 	fmt.Printf(`
 	欢迎使用 github.com/the7s/gin-vue-blog/server
 	当前版本:V0.0.1 beta
 	默认自动化文档地址:http://127.0.0.1%s`, address)
-	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "hello World!")
-	})
-	err := r.Run(address)
-	if err != nil {
-		return
-	}
+
+	Router := initialize.Routers()
+
+	s := initServer(address, Router)
+
+	s.ListenAndServe().Error()
 }
