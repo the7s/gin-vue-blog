@@ -17,9 +17,10 @@ func RunServer() {
 	当前版本:V0.0.1 beta
 	默认自动化文档地址:http://127.0.0.1%s`, address)
 
-	Router := initialize.Routers()
+	router := initialize.InitGinServer()
+	initialize.Routers(router)
 
-	s := initServer(address, Router)
+	s := initServer(address, router)
 
 	s.ListenAndServe().Error()
 }

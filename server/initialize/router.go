@@ -2,28 +2,23 @@ package initialize
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mattn/go-colorable"
-	"net/http"
+	"github.com/the7s/go-vue-blog/server/router"
 )
 
 // 初始化总路由
 
-func Routers() *gin.Engine {
+func Routers(r *gin.Engine) {
 
-	gin.ForceConsoleColor()
-	gin.DefaultWriter = colorable.NewColorableStdout()
-
-	Router := gin.Default()
-	Router.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "hello World!")
-	})
-
-	PublicGroup := Router.Group("")
+	systemGroup := router.RouterGroupApp.System
+	// 健康监测
+	PublicGroup := r.Group("")
 	{
-		// 健康监测
 		PublicGroup.GET("/health", func(c *gin.Context) {
 			c.JSON(200, "ok")
 		})
 	}
-	return Router
+	{
+		systemGroup.InitUserRouter(PublicGroup) //注册用户路由
+	}
+
 }

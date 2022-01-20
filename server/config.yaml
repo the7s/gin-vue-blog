@@ -1,16 +1,30 @@
+# 系统配置
 system:
   env: public
   addr: 8888
   db-type: mysql
   oss-type: local
+# 日志配置项
 zap:
   level: 'info'
   format: 'console'
   prefix: '[github.com/the7s/gin-vue-blog/server]'
   director: 'log'
   show-line: true
-  encode-level: 'LowercaseLevelEncoder'
+  encode-level: 'LowercaseLevelEncoder' #LowercaseColorLevelEncoder
   stacktrace-key: 'stacktrace'
   log-in-console: true
+# mysql数据库配置
+mysql:
+  path: 127.0.0.1
+  port: "3306"
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db-name: gvb
+  username: root
+  password: "123456"
+  max-idle-conns: 0
+  max-open-conns: 0
+  log-mode: ""
+  log-zap: false
+  table-prefix: "gvb_"
 
-#LowercaseColorLevelEncoder
