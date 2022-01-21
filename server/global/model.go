@@ -6,7 +6,7 @@ import (
 
 type COMMON_MODEL struct {
 	ID        uint `gorm:"primarykey"` //主键id
-	CreatedAt time.Time
-	UpdatedAt time.Time
-	DeletedAt time.Time
+	CreatedAt MyTime
+	UpdatedAt MyTime
+	DeletedAt *time.Time `gorm:"index" json:"-"`
 }

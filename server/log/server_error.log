@@ -1,0 +1,19 @@
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 15:10:02.151	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:21	注册失败	{"error": "用户名已注册"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 15:15:28.217	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:21	注册失败	{"error": "用户名已注册"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:17:15.442	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:37	用户名不存在或者密码错误	{"error": "record not found"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:17:46.006	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:37	用户名不存在或者密码错误	{"error": "record not found"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:17:52.625	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:23	注册失败	{"error": "sql: converting argument $1 type: unsupported type global.MyTime, a struct"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:18:03.157	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:23	注册失败	{"error": "sql: converting argument $1 type: unsupported type global.MyTime, a struct"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:22:51.238	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:23	注册失败	{"error": "sql: converting argument $1 type: unsupported type global.MyTime, a struct"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:23:45.427	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:23	注册失败	{"error": "sql: converting argument $1 type: unsupported type global.MyTime, a struct"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:32:16.355	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:23	注册失败	{"error": "用户名已注册"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 16:33:09.721	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:23	注册失败	{"error": "用户名已注册"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:38:23.604	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:61	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:39:34.678	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:61	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:40:55.507	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:61	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:42:03.749	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:61	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:43:34.161	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:61	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:44:04.094	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:62	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:44:55.990	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:62	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:46:17.607	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:62	获取token失败	{"error": "key is of invalid type"}
+[github.com/the7s/gin-vue-blog/server]2022/01/21 - 17:47:48.396	error	D:/golang/gin-vue-blog/server/api/v1/system/sys_user.go:60	获取token失败	{"error": "key is of invalid type"}

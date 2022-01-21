@@ -21,8 +21,12 @@ func GormMysql() *gorm.DB {
 		panic("failed to connect database")
 	}
 	db.SingularTable(true)
+	db.LogMode(true)
 	gorm.DefaultTableNameHandler = func(db *gorm.DB, defaultTableName string) string {
 		return global.GVB_CONFIG.Mysql.TablePrefix + defaultTableName
 	}
+	sqlDB := db.DB()
+	sqlDB.SetMaxIdleConns(global.GVB_CONFIG.Mysql.MaxIdleConns)
+	sqlDB.SetMaxOpenConns(global.GVB_CONFIG.Mysql.MaxOpenConns)
 	return db
 }

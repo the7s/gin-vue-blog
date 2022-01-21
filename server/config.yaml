@@ -27,4 +27,10 @@ mysql:
   log-mode: ""
   log-zap: false
   table-prefix: "gvb_"
+# jwt 认证与授权 配置
+jwt:
+  buffer-time: 86400
+  expires-time: 604800
+  issuer: the7s
+  signing-key: d6888d35-75a4-44e5-bc9d-a3ba327bb586
 
